@@ -31,9 +31,15 @@ struct WelcomeView: View {
             Spacer()
             
         
-            Button("Get Started") {
+            //Button("Get Started") {
                 //NextButtonView()
-            }
+            //}
+        
+            Button(action: {print("Get Started")} ,
+               label: {
+                NextButtonView()
+                .padding(.bottom, 50)
+            })
         }
         
     }

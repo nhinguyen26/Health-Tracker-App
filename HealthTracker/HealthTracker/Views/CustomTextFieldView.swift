@@ -22,7 +22,7 @@ struct CustomTextFieldView: View {
             HStack {
                 Text(textFieldLabel)
                     .foregroundColor(.black)
-                    .background(Rectangle().fill(.white))
+                    .background(Rectangle().fill(Color.white))
                     .font(Font.system(size: 20, weight: .medium, design: .monospaced))
                     .padding(.leading, 60)
                 Spacer()
@@ -33,7 +33,7 @@ struct CustomTextFieldView: View {
                 RoundedRectangle(cornerRadius: 10)
                     .foregroundColor(.white)
                     .frame(width: 300, height: 50)
-                    .shadow(color: .black.opacity(0.2), radius: 5, x: 0, y: 0)
+                    .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 0)
                 
                 TextField(units[textFieldLabel] ?? "", text: $tempText)
                     .padding(10)
