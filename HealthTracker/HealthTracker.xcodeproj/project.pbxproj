@@ -13,6 +13,7 @@
 		282D76452812235E00E1AB7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 282D76442812235E00E1AB7C /* Preview Assets.xcassets */; };
 		287F263F281682E90007ED19 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F263E281682E90007ED19 /* WelcomeView.swift */; };
 		287F2642281684A40007ED19 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F2641281684A40007ED19 /* HomeView.swift */; };
+		287F2645281738720007ED19 /* bear-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 287F2644281738720007ED19 /* bear-logo.png */; };
 		A9348B4228122BFC0017718E /* NextButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9348B4128122BFC0017718E /* NextButtonView.swift */; };
 		A9BB03A82812652500107960 /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB03A72812652500107960 /* CustomTextFieldView.swift */; };
 		A9BB03AE281268AC00107960 /* DataEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB03AD281268AC00107960 /* DataEntryView.swift */; };
@@ -28,6 +29,7 @@
 		282D76462812235E00E1AB7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		287F263E281682E90007ED19 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		287F2641281684A40007ED19 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		287F2644281738720007ED19 /* bear-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bear-logo.png"; path = "../../../../Downloads/bear-logo.png"; sourceTree = "<group>"; };
 		A9348B4128122BFC0017718E /* NextButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButtonView.swift; sourceTree = "<group>"; };
 		A9BB03A72812652500107960 /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
 		A9BB03AD281268AC00107960 /* DataEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntryView.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				282D763D2812235700E1AB7C /* HealthTrackerApp.swift */,
 				282D763F2812235700E1AB7C /* ContentView.swift */,
 				282D76412812235E00E1AB7C /* Assets.xcassets */,
+				287F2644281738720007ED19 /* bear-logo.png */,
 				282D76462812235E00E1AB7C /* Info.plist */,
 				282D76432812235E00E1AB7C /* Preview Content */,
 			);
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				282D76452812235E00E1AB7C /* Preview Assets.xcassets in Resources */,
+				287F2645281738720007ED19 /* bear-logo.png in Resources */,
 				282D76422812235E00E1AB7C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

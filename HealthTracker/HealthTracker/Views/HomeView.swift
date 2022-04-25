@@ -12,10 +12,16 @@ struct HomeView: View {
     
     var body: some View {
         VStack() {
-            HStack() {
-                Text("Please enter today's info to receive recommendations")
+            
+            Button(action: {
+                //what to perform
+                print("Please enter today's info to receive recommendations")
+                    
+            }) {
+                //styling
                 
             }
+            
             
             //Navigation bar
             
@@ -23,5 +29,6 @@ struct HomeView: View {
         }
         
     }
+
 }
 

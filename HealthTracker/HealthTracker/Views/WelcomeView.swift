@@ -12,18 +12,29 @@ struct WelcomeView: View {
     
     var body: some View {
         VStack() {
-            HStack() {
-                Text("CubHealth")
-                Text("Happy Healthy")
-                //Image() still need to get the image
+            
+            Image("bear-logo")
+            
+            Spacer()
+            
+            Text("CubHealth")
+                .padding(.top, 100)
+                .font(.largeTitle)
+                .padding(.bottom, 100)
+            
+            Spacer()
+            
+            Text("Happy Healthy")
+               
             }
             
             Spacer()
             
-            HStack() {
-                Button("Get Started")
+        
+            Button("Get Started") {
+                //NextButtonView()
             }
         }
         
     }
-}
+
