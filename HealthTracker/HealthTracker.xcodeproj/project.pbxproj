@@ -11,6 +11,8 @@
 		282D76402812235700E1AB7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282D763F2812235700E1AB7C /* ContentView.swift */; };
 		282D76422812235E00E1AB7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 282D76412812235E00E1AB7C /* Assets.xcassets */; };
 		282D76452812235E00E1AB7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 282D76442812235E00E1AB7C /* Preview Assets.xcassets */; };
+		287F263F281682E90007ED19 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F263E281682E90007ED19 /* WelcomeView.swift */; };
+		287F2642281684A40007ED19 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F2641281684A40007ED19 /* HomeView.swift */; };
 		A9348B4228122BFC0017718E /* NextButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9348B4128122BFC0017718E /* NextButtonView.swift */; };
 		A9BB03A82812652500107960 /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB03A72812652500107960 /* CustomTextFieldView.swift */; };
 		A9BB03AE281268AC00107960 /* DataEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB03AD281268AC00107960 /* DataEntryView.swift */; };
@@ -24,6 +26,8 @@
 		282D76412812235E00E1AB7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		282D76442812235E00E1AB7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		282D76462812235E00E1AB7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		287F263E281682E90007ED19 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		287F2641281684A40007ED19 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A9348B4128122BFC0017718E /* NextButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButtonView.swift; sourceTree = "<group>"; };
 		A9BB03A72812652500107960 /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
 		A9BB03AD281268AC00107960 /* DataEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntryView.swift; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 				A9BD42122812311700FE6F8B /* HealthProfileView.swift */,
 				A9BB03A72812652500107960 /* CustomTextFieldView.swift */,
 				A9BB03AD281268AC00107960 /* DataEntryView.swift */,
+				287F263E281682E90007ED19 /* WelcomeView.swift */,
+				287F2641281684A40007ED19 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,7 +169,9 @@
 				A9348B4228122BFC0017718E /* NextButtonView.swift in Sources */,
 				282D76402812235700E1AB7C /* ContentView.swift in Sources */,
 				A9BB03A82812652500107960 /* CustomTextFieldView.swift in Sources */,
+				287F2642281684A40007ED19 /* HomeView.swift in Sources */,
 				282D763E2812235700E1AB7C /* HealthTrackerApp.swift in Sources */,
+				287F263F281682E90007ED19 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
