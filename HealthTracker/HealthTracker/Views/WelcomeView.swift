@@ -21,7 +21,7 @@ struct WelcomeView: View {
             Spacer()
             
             HStack() {
-                Button("Get Started")
+//                Button("Get Started")
             }
         }
         
