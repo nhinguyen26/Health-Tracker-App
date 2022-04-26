@@ -13,14 +13,17 @@
 		282D76452812235E00E1AB7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 282D76442812235E00E1AB7C /* Preview Assets.xcassets */; };
 		287F263F281682E90007ED19 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F263E281682E90007ED19 /* WelcomeView.swift */; };
 		287F2642281684A40007ED19 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F2641281684A40007ED19 /* HomeView.swift */; };
-
-		287F2645281738720007ED19 /* bear-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 287F2644281738720007ED19 /* bear-logo.png */; };
-		517E6D8C28172E6F005D915A /* DataOutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E6D8B28172E6F005D915A /* DataOutputView.swift */; };
-		517E6D8E28172E7D005D915A /* NutritionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E6D8D28172E7D005D915A /* NutritionView.swift */; };
-		517E6D9028174C0E005D915A /* OutputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E6D8F28174C0E005D915A /* OutputTextFieldView.swift */; };
-		517E6D92281751FB005D915A /* Custom Meal View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E6D91281751FB005D915A /* Custom Meal View.swift */; };
-		517E6D9828175861005D915A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E6D9728175861005D915A /* ImagePicker.swift */; };
-
+		287F2645281738720007ED19 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		517E6D8C28172E6F005D915A /* (null) in Sources */ = {isa = PBXBuildFile; };
+		517E6D8E28172E7D005D915A /* (null) in Sources */ = {isa = PBXBuildFile; };
+		517E6D9028174C0E005D915A /* (null) in Sources */ = {isa = PBXBuildFile; };
+		517E6D92281751FB005D915A /* (null) in Sources */ = {isa = PBXBuildFile; };
+		517E6D9828175861005D915A /* (null) in Sources */ = {isa = PBXBuildFile; };
+		517E6D9A2817751B005D915A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E6D992817751B005D915A /* ImagePicker.swift */; };
+		517E6D9C28177521005D915A /* Custom Meal View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E6D9B28177521005D915A /* Custom Meal View.swift */; };
+		517E6D9E28177529005D915A /* NutritionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E6D9D28177529005D915A /* NutritionView.swift */; };
+		517E6DA02817752E005D915A /* OutputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E6D9F2817752E005D915A /* OutputTextFieldView.swift */; };
+		517E6DA228177534005D915A /* DataOutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E6DA128177534005D915A /* DataOutputView.swift */; };
 		A9348B4228122BFC0017718E /* NextButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9348B4128122BFC0017718E /* NextButtonView.swift */; };
 		A9BB03A82812652500107960 /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB03A72812652500107960 /* CustomTextFieldView.swift */; };
 		A9BB03AE281268AC00107960 /* DataEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB03AD281268AC00107960 /* DataEntryView.swift */; };
@@ -36,6 +39,11 @@
 		282D76462812235E00E1AB7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		287F263E281682E90007ED19 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		287F2641281684A40007ED19 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		517E6D992817751B005D915A /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = "../../../../../Health-Tracker-App 5.29.25 PM/HealthTracker/HealthTracker/Views/ImagePicker.swift"; sourceTree = "<group>"; };
+		517E6D9B28177521005D915A /* Custom Meal View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Custom Meal View.swift"; path = "../../../../../Health-Tracker-App 5.29.25 PM/HealthTracker/HealthTracker/Views/Custom Meal View.swift"; sourceTree = "<group>"; };
+		517E6D9D28177529005D915A /* NutritionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NutritionView.swift; path = "../../../../../Health-Tracker-App 5.29.25 PM/HealthTracker/HealthTracker/Views/NutritionView.swift"; sourceTree = "<group>"; };
+		517E6D9F2817752E005D915A /* OutputTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OutputTextFieldView.swift; path = "../../../../../Health-Tracker-App 5.29.25 PM/HealthTracker/HealthTracker/Views/OutputTextFieldView.swift"; sourceTree = "<group>"; };
+		517E6DA128177534005D915A /* DataOutputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataOutputView.swift; path = "../../../../../Health-Tracker-App 5.29.25 PM/HealthTracker/HealthTracker/Views/DataOutputView.swift"; sourceTree = "<group>"; };
 		A9348B4128122BFC0017718E /* NextButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButtonView.swift; sourceTree = "<group>"; };
 		A9BB03A72812652500107960 /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
 		A9BB03AD281268AC00107960 /* DataEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntryView.swift; sourceTree = "<group>"; };
@@ -76,7 +84,6 @@
 				282D763D2812235700E1AB7C /* HealthTrackerApp.swift */,
 				282D763F2812235700E1AB7C /* ContentView.swift */,
 				282D76412812235E00E1AB7C /* Assets.xcassets */,
-				287F2644281738720007ED19 /* bear-logo.png */,
 				282D76462812235E00E1AB7C /* Info.plist */,
 				282D76432812235E00E1AB7C /* Preview Content */,
 			);
@@ -100,11 +107,11 @@
 				A9BB03AD281268AC00107960 /* DataEntryView.swift */,
 				287F263E281682E90007ED19 /* WelcomeView.swift */,
 				287F2641281684A40007ED19 /* HomeView.swift */,
-				517E6D8B28172E6F005D915A /* DataOutputView.swift */,
-				517E6D8F28174C0E005D915A /* OutputTextFieldView.swift */,
-				517E6D8D28172E7D005D915A /* NutritionView.swift */,
-				517E6D91281751FB005D915A /* Custom Meal View.swift */,
-				517E6D9728175861005D915A /* ImagePicker.swift */,
+				517E6DA128177534005D915A /* DataOutputView.swift */,
+				517E6D9F2817752E005D915A /* OutputTextFieldView.swift */,
+				517E6D9D28177529005D915A /* NutritionView.swift */,
+				517E6D9B28177521005D915A /* Custom Meal View.swift */,
+				517E6D992817751B005D915A /* ImagePicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,7 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				282D76452812235E00E1AB7C /* Preview Assets.xcassets in Resources */,
-				287F2645281738720007ED19 /* bear-logo.png in Resources */,
+				287F2645281738720007ED19 /* (null) in Resources */,
 				282D76422812235E00E1AB7C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,19 +186,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				517E6D9828175861005D915A /* ImagePicker.swift in Sources */,
+				517E6D9828175861005D915A /* (null) in Sources */,
 				A9BD42132812311700FE6F8B /* HealthProfileView.swift in Sources */,
 				A9BB03AE281268AC00107960 /* DataEntryView.swift in Sources */,
-				517E6D8E28172E7D005D915A /* NutritionView.swift in Sources */,
-				517E6D9028174C0E005D915A /* OutputTextFieldView.swift in Sources */,
+				517E6DA228177534005D915A /* DataOutputView.swift in Sources */,
+				517E6D9A2817751B005D915A /* ImagePicker.swift in Sources */,
+				517E6D8E28172E7D005D915A /* (null) in Sources */,
+				517E6DA02817752E005D915A /* OutputTextFieldView.swift in Sources */,
+				517E6D9E28177529005D915A /* NutritionView.swift in Sources */,
+				517E6D9028174C0E005D915A /* (null) in Sources */,
 				A9348B4228122BFC0017718E /* NextButtonView.swift in Sources */,
+				517E6D9C28177521005D915A /* Custom Meal View.swift in Sources */,
 				282D76402812235700E1AB7C /* ContentView.swift in Sources */,
 				A9BB03A82812652500107960 /* CustomTextFieldView.swift in Sources */,
 				287F2642281684A40007ED19 /* HomeView.swift in Sources */,
 				282D763E2812235700E1AB7C /* HealthTrackerApp.swift in Sources */,
 				287F263F281682E90007ED19 /* WelcomeView.swift in Sources */,
-				517E6D92281751FB005D915A /* Custom Meal View.swift in Sources */,
-				517E6D8C28172E6F005D915A /* DataOutputView.swift in Sources */,
+				517E6D92281751FB005D915A /* (null) in Sources */,
+				517E6D8C28172E6F005D915A /* (null) in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
