@@ -11,7 +11,7 @@ struct CustomTextFieldView: View {
     
     var textFieldLabel: String
 
-    @State var tempText: String = ""
+    @Binding var tempText: String
     
     let units: [String:String] = ["Hours Slept" : "hours", "Cups of Water":"cups", "Calories Burned":"calories", "Calories Eaten":"calories", "Age" : "years", "Weight": "pounds", "Height": "inches", "Gender": "input"]
     
@@ -45,8 +45,9 @@ struct CustomTextFieldView: View {
     }
 }
 
-struct CustomTextFieldView_Previews: PreviewProvider {
-    static var previews: some View {
-        CustomTextFieldView(textFieldLabel: "Hours Slept")
-    }
-}
+//struct CustomTextFieldView_Previews: PreviewProvider {
+//
+//    static var previews: some View {
+//        CustomTextFieldView(textFieldLabel: "Hours Slept")
+//    }
+//}

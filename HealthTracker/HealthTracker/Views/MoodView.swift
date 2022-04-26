@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 struct MoodView: View {
     @State var mood: String = ""
+    @State var addData3: Bool = false
     let themePurple: Color = Color(CGColor(red: 164/255, green: 150/255, blue: 250/255, alpha: 1))
 
     var body: some View {
@@ -61,10 +62,19 @@ struct MoodView: View {
                               }
                           }
             Spacer()
-            NextButtonView()
-                .padding(.bottom, 50)
+            
+            Group {
+            
+            Button(action: {
+                Data.shared.moodData = [mood]
+                addData3 = true
+            }, label: {NextButtonView()})
+            
+                NavigationLink("", isActive: $addData3, destination: {NutritionView()})
+            }
                 
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 struct MoodView_Previews: PreviewProvider {

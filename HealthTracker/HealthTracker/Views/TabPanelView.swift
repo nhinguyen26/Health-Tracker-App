@@ -37,33 +37,27 @@ struct TabPanelView: View {
                 .shadow(color: .black.opacity(0.2), radius: 2, x: 0, y: 0)
             
             HStack {
-                Button(action: {}) {
-                    Image(systemName: "house.fill")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 30, height: 40)
-                            .foregroundColor(.black.opacity(opacityVal))
-                }
+                
+                NavigationLink(destination: HomeView(), label: {Image(systemName: "house.fill")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 30, height: 40)
+                        .foregroundColor(.black.opacity(opacityVal))})
 
                 
-                Button(action: {}) {
-                    Circle().fill(themePurple)
+                NavigationLink(destination: HealthProfileView(), label: {Circle().fill(themePurple)
                         .frame(width:40, height: 40)
                         .overlay(Image(systemName: "plus")
                                     .resizable()
                                     .foregroundColor(.white)
                                     .aspectRatio(contentMode: .fit)
-                                    .frame(width: 30, height: 30)
-                        )
-                }
+                                    .frame(width: 30, height: 30))})
                 
-                Button(action: {}) {
-                    Image(systemName: "questionmark")
+                NavigationLink(destination: ResourceView(), label: {Image(systemName: "questionmark")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 30, height: 30)
-                        .foregroundColor(.black.opacity(1-opacityVal))
-                }
+                        .foregroundColor(.black.opacity(1-opacityVal))})
                 
             }
             

@@ -19,6 +19,7 @@ struct HomeView: View {
             themeBackground
         
             VStack {
+                Spacer()
             
                 ZStack {
                     RoundedRectangle(cornerRadius: 30)
@@ -34,9 +35,13 @@ struct HomeView: View {
                         .foregroundColor(.black)
                         
                 }
+                Spacer()
+                TabPanelView(home: true)
+                    .padding(.bottom, 50)
             }
         }
         .ignoresSafeArea()
+        .navigationBarBackButtonHidden(true)
         
 
     }

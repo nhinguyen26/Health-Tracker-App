@@ -10,40 +10,35 @@ import SwiftUI
 struct WelcomeView: View {
     
     var body: some View {
-        VStack() {
-            Spacer()
-            Spacer()
+        NavigationView {
+            VStack() {
+                Spacer()
+                Spacer()
+                
+                Image("bear")
+                    .frame(width: 50,height: 50).foregroundColor(.purple)
             
-            Image("bear")
-                .frame(width: 50,height: 50).foregroundColor(.purple)
-        
-            Text("CubHealth")
-                .padding(.top, 50)
-                .font(.largeTitle)
-                .padding(.bottom, 50)
-            
-            Text("Happy Healthy")
-                .padding(.bottom,50)
+                Text("CubHealth")
+                    .padding(.top, 50)
+                    .font(.largeTitle)
+                    .padding(.bottom, 50)
+                
+                Text("Happy Healthy")
+                    .padding(.bottom,50)
 
-            HStack() {
+                HStack() {
+                }
+
+                Spacer()
+                
+                NavigationLink(destination: {HomeView()}, label: {NextButtonView()})
+                    .padding(.bottom, 50)
             }
-
-            Spacer()
-            
-            Button(action: {print("Get Started")} ,
-               label: {
-                NextButtonView()
-                .padding(.bottom, 50)
-            })
-               
+            .navigationBarHidden(true)
         }
-            
-            //Spacer()
-
-            
-        }
-        
     }
+        
+}
 
 struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {

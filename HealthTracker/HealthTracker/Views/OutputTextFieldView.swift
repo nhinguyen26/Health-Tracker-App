@@ -37,8 +37,8 @@ struct OutputTextFieldView: View {
     }
 }
 
-struct OutputTextFieldView_Previews: PreviewProvider {
-    static var previews: some View {
-        CustomTextFieldView(textFieldLabel: "Hours Slept")
-    }
-}
+//struct OutputTextFieldView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CustomTextFieldView(textFieldLabel: "Hours Slept")
+//    }
+//}

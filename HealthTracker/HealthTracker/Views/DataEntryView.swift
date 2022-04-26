@@ -8,6 +8,17 @@
 import SwiftUI
 
 struct DataEntryView: View {
+    
+    @State var str1: String = ""
+    @State var str2: String = ""
+    @State var str3: String = ""
+    @State var str4: String = ""
+    
+    @State var arrayData2: [String] = []
+    
+    @State var addData2: Bool = false
+
+    
     var body: some View {
         VStack {
             Text("Enter Today's Behavior")
@@ -15,21 +26,36 @@ struct DataEntryView: View {
                 .font(.largeTitle)
                 .padding(.bottom, 50)
             
+            Group {
+                CustomTextFieldView(textFieldLabel: "Hours Slept", tempText: $str1).keyboardType(.decimalPad)
+                Spacer()
+                CustomTextFieldView(textFieldLabel: "Cups of Water", tempText: $str2)
+                    .keyboardType(.decimalPad)
+                Spacer()
+                CustomTextFieldView(textFieldLabel: "Calories Ate", tempText: $str3)
+                    .keyboardType(.decimalPad)
+                Spacer()
+                CustomTextFieldView(textFieldLabel: "Calories Burned", tempText: $str4)
+                    .keyboardType(.decimalPad)
+                Spacer()
+            }
             
-            CustomTextFieldView(textFieldLabel: "Hours Slept").keyboardType(.decimalPad)
-            Spacer()
-            CustomTextFieldView(textFieldLabel: "Cups of Water")
-                .keyboardType(.decimalPad)
-            Spacer()
-            CustomTextFieldView(textFieldLabel: "Calories Ate")
-                .keyboardType(.decimalPad)
-            Spacer()
-            CustomTextFieldView(textFieldLabel: "Calories Burned")
-                .keyboardType(.decimalPad)
-            Spacer()
-            NextButtonView()
-                .padding(.bottom, 50)
+            Group {
+            
+            Button(action: {
+                arrayData2.append(str1)
+                arrayData2.append(str2)
+                arrayData2.append(str3)
+                arrayData2.append(str4)
+                print(arrayData2)
+                Data.shared.dataEntryData = arrayData2
+                addData2 = true
+            }, label: {NextButtonView()})
+            
+                NavigationLink("", isActive: $addData2, destination: {MoodView()})
+            }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

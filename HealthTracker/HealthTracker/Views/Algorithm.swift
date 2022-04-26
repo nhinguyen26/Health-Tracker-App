@@ -12,9 +12,9 @@ struct Algorithm {
     var calBurn: Int
     var calEaten: Int
     
-    init (gender: String, age: Int, hours: Int, water: Int, weight: Int, height: Int, calBurn: Int, calEaten: Int) {
-        self.gender = gender
+    init (age: Int, gender: String, weight: Int, height: Int, hours: Int, water: Int, calEaten: Int, calBurn: Int) {
         self.age = age
+        self.gender = gender
         self.hours = hours
         self.water = water
         self.weight = weight
@@ -23,17 +23,9 @@ struct Algorithm {
         self.calEaten = calEaten
     }
     
-    func printAll() {
-        print(calculateBMI())
-        print(sleepQuality())
-        print(waterAmount())
-        print(calBurned())
-        print(calsEaten())
-    }
-    
     
     func calculateBMI() -> String {
-        return "Your BMI is \(weight * 703 / height)"
+        return "Your BMI is \((weight * 703) / (height*height))"
     }
     
     func sleepQuality() -> String {

@@ -6,7 +6,7 @@ struct Data {
     var moodData: [String]
     var foodData: [String]
     
-    static let shared = Data(health: [], entry: [], mood: [], food: [])
+    static var shared = Data(health: ["1", "", "1", "1"], entry: ["1", "1", "1", "1"], mood: [], food: [])
     
     init(health: [String], entry: [String], mood: [String], food: [String]) {
         self.healthProfileData = health

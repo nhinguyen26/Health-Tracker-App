@@ -14,14 +14,8 @@ struct HealthProfileView: View {
     @State var str3: String = ""
     @State var str4: String = ""
     
-    @State var dictionary: [String] = []
-    
-    init() {
-        dictionary.append(str1)
-        dictionary.append(str2)
-        dictionary.append(str3)
-        dictionary.append(str4)
-    }
+    @State var arrayData: [String] = []
+    @State var addData: Bool = false
     
     var body: some View {
         
@@ -30,25 +24,36 @@ struct HealthProfileView: View {
                 .padding(.top, 50)
                 .font(.largeTitle)
                 .padding(.bottom, 50)
-            CustomTextFieldView(textFieldLabel: "Age", tempText: str1)
+            CustomTextFieldView(textFieldLabel: "Age", tempText: $str1)
                 .keyboardType(.decimalPad)
             Spacer()
-            CustomTextFieldView(textFieldLabel: "Gender", tempText: str2)
+            CustomTextFieldView(textFieldLabel: "Gender", tempText: $str2)
             Spacer()
-            CustomTextFieldView(textFieldLabel: "Weight", tempText: str3)
+            CustomTextFieldView(textFieldLabel: "Weight", tempText: $str3)
                 .keyboardType(.decimalPad)
             Spacer()
-            CustomTextFieldView(textFieldLabel: "Height", tempText: str4)
+            CustomTextFieldView(textFieldLabel: "Height", tempText: $str4)
                 .keyboardType(.decimalPad)
             Spacer()
             
-            Button(action: {print(dictionary)} ,
-                   label: {
-                NextButtonView()
-                    .padding(.bottom, 50)
-            })
+            Group {
+            
+            Button(action: {
+                arrayData.append(str1)
+                arrayData.append(str2)
+                arrayData.append(str3)
+                arrayData.append(str4)
+                print(arrayData)
+                Data.shared.healthProfileData = arrayData
+                addData = true
+            }, label: {NextButtonView()})
+            
+                NavigationLink("", isActive: $addData, destination: {DataEntryView()})
+            }
         }
+        .navigationBarBackButtonHidden(true)
     }
+        
 }
 
 struct HealthProfileView_Previews: PreviewProvider {

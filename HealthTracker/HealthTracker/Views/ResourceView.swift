@@ -57,11 +57,10 @@ struct ResourceView: View {
                     .padding(20)
                     .padding(.bottom, 10)
                     .padding(.top, 80)
-                TabPanelView(home: false).padding(.bottom, 110)
+                TabPanelView(home: false)
+                    .padding(.bottom, 110)
             }
-
-        
-        
+            .navigationBarBackButtonHidden(true)
     }
 }
 
