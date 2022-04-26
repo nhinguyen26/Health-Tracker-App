@@ -25,7 +25,8 @@ struct WelcomeView: View {
             Spacer()
             
             Text("Happy Healthy")
-               
+
+            HStack() {
             }
             
             Spacer()
