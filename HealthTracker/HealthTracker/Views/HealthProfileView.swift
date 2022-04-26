@@ -56,3 +56,4 @@ struct HealthProfileView_Previews: PreviewProvider {
         HealthProfileView()
     }
 }
+
