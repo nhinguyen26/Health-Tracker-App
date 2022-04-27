@@ -1,5 +1,21 @@
+//
+//  NutritionView.swift
+//  HealthTracker
+//
+//  Created by Verena Yiu on 4/25/22.
+//
+
+
 import SwiftUI
 
+//class Food: Identifiable {
+//    var foodName: String
+//    var calories: String
+//    init(foodName: String, calories: String) {
+//        self.foodName = foodName
+//        self.calories = calories
+//    }
+//}
 
 class DummyData: Identifiable {
     var dummy1: String
@@ -8,44 +24,76 @@ class DummyData: Identifiable {
         self.dummy1 = dummy1
     }
 }
+
 struct NutritionView: View {
     
     @State var list = [DummyData(dummy1: "")]
     
+    let themeBackground: Color = Color(CGColor(red: 247/255, green: 251/255, blue: 254/255, alpha: 1))
+    
+    let themePurple: Color = Color(CGColor(red: 164/255, green: 150/255, blue: 250/255, alpha: 1))
+    
     var body: some View {
-        
-        
-    VStack {
-        Text("Log Your Meals")
-            .padding(.top, 50)
-            .font(.largeTitle)
-            .padding(.bottom, 50)
-        
-        List {
-            ForEach(list) {item in
-                CustomMealView()
+        ZStack {
+            themeBackground
+            
+            VStack {
+                Text("Log Your Meals")
+                    .padding(.top, 50)
+                    .font(.largeTitle)
+                    .padding(.bottom, 50)
+                
+                LazyVStack{
+                    ForEach(list) { item in
+                        CustomMealView()
+                    }
+                    .frame(maxWidth: .infinity, alignment: .center)
+                    .padding(.bottom, 20)
+                    .listRowBackground(themeBackground)
+                }
+                
+                Spacer()
+                
+                HStack {
+                    //ADD BUTTON
+                    Button(action: {
+                        list.append(DummyData(dummy1: ""))
+                    }, label: {
+                        ZStack() {
+                            Circle()
+                                .frame(width: 30, height: 30)
+                                .foregroundColor(themePurple)
+                            Image(systemName: "plus")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 20, height: 20)
+                                .foregroundColor(.white)
+                        }
+                    })
+                    .padding(.trailing, 20)
+                    
+                    //REMOVE BUTTON
+                    Button(action: {
+                        list.remove(at: 0)
+                    }, label: {
+                        ZStack() {
+                            Circle()
+                                .frame(width: 30, height: 30)
+                                .foregroundColor(themePurple)
+                            Image(systemName: "minus")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 20, height: 20)
+                                .foregroundColor(.white)
+                        }
+                    })
+                }
+                .padding(.bottom, 20)
+                
+                NextButtonView()
+                    .padding(.bottom, 50)
             }
         }
-        
-        /*
-        //ADD BUTTON
-        Button(action: {
-            list.append(DummyData(dummy1: ""))
-        }, label: {NextButtonView(text: "Add View")})
-        
-        //REMOVE BUTTON
-        Button(action: {
-            list.remove(at: 0)
-        }, label: {NextButtonView(text: "Rem View")})
-        */
-        
-        
-        Spacer()
-        
-        NavigationLink(destination: {DataOutputView()}, label: {NextButtonView()})
-            .padding(25)
-        }
-        .navigationBarBackButtonHidden(true)
     }
 }
 
@@ -54,3 +102,4 @@ struct NutritionView_Previews: PreviewProvider {
         NutritionView()
     }
 }
+
