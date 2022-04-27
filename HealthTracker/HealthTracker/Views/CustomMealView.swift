@@ -1,3 +1,10 @@
+//
+//  CustomMealView.swift
+//  HealthTracker
+//
+//  Created by Verena Yiu on 4/25/22.
+//
+
 import SwiftUI
 
 struct CustomMealView: View {
@@ -17,29 +24,10 @@ struct CustomMealView: View {
                 .shadow(color: .black.opacity(0.2), radius: 5, x: 0, y: 0)
 
             VStack {
-                HStack(alignment: .center) {
+                HStack {
                     TextField("Meal", text: $meal)
                         .foregroundColor(.white)
                         .fixedSize()
-                        .padding(.leading, 95)
-
-                    Spacer()
-        
-                    Button(action: {
-                        addItem()
-                    }, label: {
-                        ZStack() {
-                            Circle()
-                                .frame(width: 20, height: 20)
-                                .foregroundColor(.white)
-                        Image(systemName: "plus")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 15, height: 20)
-                            .foregroundColor(themePurple)
-                        }
-                    })
-                    .padding(.trailing, 85)
                 }
                 
                 ZStack {
@@ -51,7 +39,7 @@ struct CustomMealView: View {
                         ZStack {
                             Image(uiImage: self.image)
                                 .resizable()
-                                .frame(width: 150, height: 100)
+                                .frame(width: 100, height: 80)
                                 .edgesIgnoringSafeArea(.all)
                                 
                             
@@ -62,7 +50,7 @@ struct CustomMealView: View {
                                     Text("Select photo")
                                         .font(.system(size: 12))
                                 }
-                                .frame(width: 120, height: 50)
+                                .frame(width: 100, height: 50)
                                 .background(Color.blue)
                                 .foregroundColor(.white)
                                 .cornerRadius(20)
@@ -74,24 +62,23 @@ struct CustomMealView: View {
                             TextField("Enter name", text: $name)
                                 .foregroundColor(.white)
                                 .fixedSize()
+                                .font(Font.system(size: 15))
+                                .padding(.trailing, 20)
                                 
-                            
                             TextField("Enter calories", text: $calories)
                                 .foregroundColor(.white)
                                 .fixedSize()
-                                
+                                .font(Font.system(size: 15))
+                                .padding(.trailing, 20)
                         }
-                        
                     }
                     
-
                 }
                 
             }
             .sheet(isPresented: $isShowPhotoLibrary) {
                 ImagePicker(selectedImage: self.$image, sourceType: .photoLibrary)
             }
-            
         }
     }
     func addItem() {
