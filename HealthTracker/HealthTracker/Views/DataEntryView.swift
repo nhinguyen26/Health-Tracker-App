@@ -61,6 +61,7 @@ struct DataEntryView: View {
                 }
             }
             .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true)
         }
     }
 }

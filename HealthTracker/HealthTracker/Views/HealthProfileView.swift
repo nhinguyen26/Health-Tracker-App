@@ -57,6 +57,7 @@ struct HealthProfileView: View {
                 }
             }
             .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true)
         }
     }
 }

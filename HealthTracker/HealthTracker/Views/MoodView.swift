@@ -80,6 +80,7 @@ struct MoodView: View {
                 
             }
             .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true)
         }
     }
 }

@@ -88,11 +88,12 @@ struct NutritionView: View {
                         }
                     })
                 }
-                .padding(.bottom, 20)
                 
-                NextButtonView()
+                NavigationLink(destination: {DataOutputView()}, label: {NextButtonView()})
                     .padding(.bottom, 50)
             }
+            .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true)
         }
     }
 }

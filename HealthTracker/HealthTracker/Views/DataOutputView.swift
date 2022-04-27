@@ -44,21 +44,29 @@ struct DataOutputView: View {
                                 .multilineTextAlignment(.leading)
                         }
                     }
-                    Spacer()
                     
-                    OutputTextFieldView(category: "Cups of water:", text:calcs.waterAmount())
-                    Spacer()
-                    
-                    OutputTextFieldView(category: "Hours slept:", text:calcs.sleepQuality())
-                    Spacer()
-                    
-                    OutputTextFieldView(category: "Calories ate:", text:calcs.calsEaten())
-                    Spacer()
-                    
-                    OutputTextFieldView(category: "Calories burned:", text:calcs.calBurned())
+                    Group {
+                        Spacer()
+                        
+                        OutputTextFieldView(category: "Cups of water:", text:calcs.waterAmount())
+                        Spacer()
+                        
+                        OutputTextFieldView(category: "Hours slept:", text:calcs.sleepQuality())
+                        Spacer()
+                        
+                        OutputTextFieldView(category: "Calories ate:", text:calcs.calsEaten())
+                        Spacer()
+                        
+                        OutputTextFieldView(category: "Calories burned:", text:calcs.calBurned())
+                        Spacer()
+                        
+                        TabPanelView(home: true)
+                    }
                     Spacer()
                 }
             }
+            .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true)
         }
     }
 }

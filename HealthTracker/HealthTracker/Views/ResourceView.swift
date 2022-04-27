@@ -61,6 +61,7 @@ struct ResourceView: View {
                     .padding(.bottom, 110)
             }
             .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true)
     }
 }
 

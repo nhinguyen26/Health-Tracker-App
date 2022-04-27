@@ -45,10 +45,10 @@ struct Algorithm {
     }
     
     func calBurned() -> String {
-        if water > 13 {
-            return "You drank more than 13 cups of water. Great job!"
+        if calBurn > 2200 {
+            return "You burned more than 2200 calories. Great job!"
         } else {
-            return "You drank less than 13 cups of water. You need to drink more water!"
+            return "You burned less than 2200 calories. Go for a walk!"
         }
     }
     
