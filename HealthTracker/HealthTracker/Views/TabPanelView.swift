@@ -38,7 +38,12 @@ struct TabPanelView: View {
             
             HStack {
                 
-                NavigationLink(destination: HomeView(), label: {Image(systemName: "house.fill")
+                NavigationLink(destination: {
+                    if Data.shared.outputReady {
+                        DataOutputView()
+                    } else {
+                    HomeView()
+                    }}, label: {Image(systemName: "house.fill")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 30, height: 40)

@@ -25,7 +25,7 @@ struct Algorithm {
     
     
     func calculateBMI() -> String {
-        return "Your BMI is \((weight * 703) / (height*height))"
+        return "Your BMI is \((weight * 703) / (height*height))."
     }
     
     func sleepQuality() -> String {
@@ -40,7 +40,7 @@ struct Algorithm {
         if water > 13 {
             return "You drank more than 13 cups of water. Great job!"
         } else {
-            return "You drank less than 13 cups of water. You need to drink more water!"
+            return "You drank less than 13 cups of water. Drink more water!"
         }
     }
     
@@ -56,7 +56,7 @@ struct Algorithm {
         if calEaten > 2600 {
             return "You consumed more calories than the recommended amount."
         } else if calEaten < 1600 {
-            return "You consumed less calories than the recommended amount"
+            return "You consumed less calories than the recommended amount."
         } else {
             return "You ate the right amount of calories today. Great job!"
         }

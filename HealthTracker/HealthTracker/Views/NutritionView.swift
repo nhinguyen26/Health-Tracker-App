@@ -28,6 +28,7 @@ class DummyData: Identifiable {
 struct NutritionView: View {
     
     @State var list = [DummyData(dummy1: "")]
+    @State var addData4: Bool = false
     
     let themeBackground: Color = Color(CGColor(red: 247/255, green: 251/255, blue: 254/255, alpha: 1))
     
@@ -89,8 +90,14 @@ struct NutritionView: View {
                     })
                 }
                 
-                NavigationLink(destination: {DataOutputView()}, label: {NextButtonView()})
-                    .padding(.bottom, 50)
+                Button(action: {
+                    addData4 = true
+                    Data.shared.outputReady = true
+                    
+                }, label: {NextButtonView().padding(.bottom, 50)})
+                
+                
+                NavigationLink(isActive: $addData4, destination: {DataOutputView()}, label: {EmptyView()})
             }
             .navigationBarBackButtonHidden(true)
             .navigationBarHidden(true)

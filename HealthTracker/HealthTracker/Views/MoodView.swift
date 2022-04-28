@@ -8,10 +8,17 @@
 import Foundation
 import SwiftUI
 struct MoodView: View {
-    @State var mood: String = ""
+    @State var mood: String = "I'm Happy"
     @State var addData3: Bool = false
     let themePurple: Color = Color(CGColor(red: 164/255, green: 150/255, blue: 250/255, alpha: 1))
     let themeBackground: Color = Color(CGColor(red: 247/255, green: 251/255, blue: 254/255, alpha: 1))
+    let selectedPurple: Color = Color(CGColor(red: 237/255, green: 181/255, blue: 247/255, alpha: 1))
+    
+    @State var mood1: Color = Color(CGColor(red: 164/255, green: 150/255, blue: 250/255, alpha: 1))
+    @State var mood2: Color = Color(CGColor(red: 164/255, green: 150/255, blue: 250/255, alpha: 1))
+    @State var mood3: Color = Color(CGColor(red: 164/255, green: 150/255, blue: 250/255, alpha: 1))
+    @State var mood4: Color = Color(CGColor(red: 164/255, green: 150/255, blue: 250/255, alpha: 1))
+
     
     var body: some View {
         
@@ -24,46 +31,66 @@ struct MoodView: View {
                     .font(.title)
                     .padding(.bottom, 50)
                 Button(action: {
-                    mood="happy"
+                    mood="I'm Happy!"
+                    mood1 = selectedPurple
+                    mood2 = themePurple
+                    mood3 = themePurple
+                    mood4 = themePurple
                 }) {
-                    HStack {
-                        Text("happy").padding(.trailing, 15).font(.subheadline)
+                    VStack {
+                        Text("happy")
+                            .font(.subheadline)
                         Image("happy")
                             .clipShape(Circle())
-                            .overlay(Circle().stroke(themePurple, lineWidth: 10))
+                            .overlay(Circle().stroke(mood1, lineWidth: 10))
                     }
                 }
                 Spacer()
                 Button(action: {
-                    mood="fine"
+                    mood="I'm Fine."
+                    mood1 = themePurple
+                    mood2 = selectedPurple
+                    mood3 = themePurple
+                    mood4 = themePurple
                 }) {
-                    HStack {
-                        Text("fine").padding(.trailing, 15).font(.subheadline)
+                    VStack {
+                        Text("fine")
+                            .font(.subheadline)
                         Image("fine")
                             .clipShape(Circle())
-                            .overlay(Circle().stroke(themePurple, lineWidth: 10))
+                            .overlay(Circle().stroke(mood2, lineWidth: 10))
                     }
                 }
                 Spacer()
                 Button(action: {
-                    mood="sad"
+                    mood="I'm Sad."
+                    mood1 = themePurple
+                    mood2 = themePurple
+                    mood3 = selectedPurple
+                    mood4 = themePurple
                 }) {
-                    HStack {
-                        Text("sad").padding(.trailing, 15).font(.subheadline)
+                    VStack {
+                        Text("sad")
+                            .font(.subheadline)
                         Image("sad")
                             .clipShape(Circle())
-                            .overlay(Circle().stroke(themePurple, lineWidth: 10))
+                            .overlay(Circle().stroke(mood3, lineWidth: 10))
                     }
                 }
                 Spacer()
                 Button(action: {
-                    mood="angry"
+                    mood="Angry!"
+                    mood1 = themePurple
+                    mood2 = themePurple
+                    mood3 = themePurple
+                    mood4 = selectedPurple
                 }) {
-                    HStack {
-                        Text("angry").padding(.trailing, 15).font(.subheadline)
+                    VStack {
+                        Text("angry")
+                            .font(.subheadline)
                         Image("angry")
                             .clipShape(Circle())
-                            .overlay(Circle().stroke(themePurple, lineWidth: 10))
+                            .overlay(Circle().stroke(mood4, lineWidth: 10))
                     }
                 }
                 Spacer()
