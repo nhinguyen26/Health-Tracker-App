@@ -13,6 +13,7 @@ struct CustomMealView: View {
     @State private var meal: String = ""
     @State private var name: String = ""
     @State private var calories: String = ""
+    @State private var hide: Double = 1.0
     
     let themePurple: Color = Color(CGColor(red: 164/255, green: 150/255, blue: 250/255, alpha: 1))
     
@@ -26,7 +27,7 @@ struct CustomMealView: View {
             VStack {
                 HStack {
                     TextField("Meal", text: $meal)
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .fixedSize()
                 }
                 
@@ -45,6 +46,7 @@ struct CustomMealView: View {
                             
                             Button(action: {
                                 self.isShowPhotoLibrary = true
+                                hide = 0.0
                             }) {
                                 HStack {
                                     Text("Select photo")
@@ -56,20 +58,23 @@ struct CustomMealView: View {
                                 .cornerRadius(20)
                                 .padding(.horizontal)
                             }
+                            .opacity(hide)
+            
                         }
                         
                         VStack {
                             TextField("Enter name", text: $name)
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                                 .fixedSize()
                                 .font(Font.system(size: 15))
                                 .padding(.trailing, 20)
                                 
                             TextField("Enter calories", text: $calories)
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                                 .fixedSize()
                                 .font(Font.system(size: 15))
                                 .padding(.trailing, 20)
+                                .offset(x:7)
                         }
                     }
                     

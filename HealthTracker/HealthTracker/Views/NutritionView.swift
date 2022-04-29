@@ -58,7 +58,9 @@ struct NutritionView: View {
                 HStack {
                     //ADD BUTTON
                     Button(action: {
-                        list.append(DummyData(dummy1: ""))
+                        if list.count < 3 {
+                            list.append(DummyData(dummy1: ""))
+                        }
                     }, label: {
                         ZStack() {
                             Circle()
@@ -75,7 +77,9 @@ struct NutritionView: View {
                     
                     //REMOVE BUTTON
                     Button(action: {
-                        list.remove(at: 0)
+                        if list.count > 0 {
+                            list.remove(at: list.count-1)
+                        }
                     }, label: {
                         ZStack() {
                             Circle()
