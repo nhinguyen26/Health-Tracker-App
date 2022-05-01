@@ -13,7 +13,7 @@ struct CustomTextFieldView: View {
 
     @Binding var tempText: String
     
-    let units: [String:String] = ["Hours Slept" : "hours", "Cups of Water":"cups", "Calories Burned":"calories", "Calories Eaten":"calories", "Age" : "years", "Weight": "pounds", "Height": "inches", "Gender": "input"]
+    let units: [String:String] = ["Hours Slept" : "hours", "Cups of Water":"cups", "Calories Burned":"calories", "Calories Ate":"calories", "Age" : "years", "Weight": "pounds", "Height": "inches", "Gender": "input"]
     
 
     var body: some View {
